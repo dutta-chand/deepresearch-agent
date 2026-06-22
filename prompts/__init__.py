@@ -6,7 +6,7 @@ from prompts.seo_strategy import seo_strategy_prompt
 from prompts.article_architecture import article_outline_prompt
 from prompts.draft_writing import draft_writer_prompt
 from prompts.fact_checking import fact_check_prompt
-from prompts.refinement import refinement_prompt
+from prompts.refinement import humanization_refinement_prompt
 from prompts.style_audit import style_audit_prompt
 
 __all__ = [
