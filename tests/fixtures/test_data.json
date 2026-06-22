@@ -1,0 +1,39 @@
+
+{
+  "sample_search_results": [
+    {
+      "url": "https://example.com/article1",
+      "title": "Introduction to ML",
+      "snippet": "Machine learning basics explained",
+      "score": 0.95
+    },
+    {
+      "url": "https://example.com/article2",
+      "title": "Advanced ML Techniques",
+      "snippet": "Deep dive into neural networks",
+      "score": 0.87
+    }
+  ],
+  "sample_sources": [
+    {
+      "url": "https://example.com/source1",
+      "title": "ML Tutorial",
+      "domain": "example.com",
+      "domain_authority": 75.0,
+      "relevance_score": 0.9
+    }
+  ],
+  "sample_evidence": [
+    {
+      "claim": "Machine learning improves with more data",
+      "source_url": "https://example.com/source1",
+      "evidence_type": "statistic",
+      "confidence": 0.85
+    }
+  ],
+  "sample_article": {
+    "title": "Guide to Machine Learning",
+    "word_count": 1500,
+    "sections": ["Introduction", "Concepts", "Applications", "Conclusion"]
+  }
+}
