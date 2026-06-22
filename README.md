@@ -1,144 +1,229 @@
 # AI SEO Content Engine
 
-A production-grade LangGraph-powered AI research and content generation system that combines deep web research, website style analysis, local trend intelligence, SEO strategy, and article generation into a single automated workflow.
+> Multi-Agent LangGraph System for Deep Research, Humanized SEO Content Generation, Website Style Adaptation, and Localized SEO Intelligence.
+
+---
 
 ## Overview
 
-AI SEO Content Engine is an advanced multi-stage content generation platform that transforms three user inputs:
+AI SEO Content Engine is a production-grade AI workflow that transforms a simple keyword into a fully researched, SEO-optimized, humanized long-form article.
 
-* **Keyword** – Primary topic or target keyword
-* **Website** – Reference website for style and brand voice analysis
-* **Pincode** – Geographic location for local trend and SEO context
+The system combines:
 
-into a fully researched, fact-checked, SEO-optimized article that aligns with the writing style of the provided website while remaining original and source-backed.
+- Deep web research
+- Website style analysis
+- Brand voice extraction
+- Local SEO intelligence
+- Keyword expansion
+- Fact verification
+- Content refinement
+- Human-like content generation
 
----
+into a single autonomous pipeline powered by LangGraph.
 
-## Key Features
-
-### Deep Research Pipeline
-
-* Multi-stage web research using Tavily
-* Source aggregation and ranking
-* Evidence synthesis
-* Structured knowledge extraction
-
-### Website Style Analysis
-
-* Tone detection
-* Brand voice analysis
-* Heading structure analysis
-* Paragraph and content rhythm analysis
-* CTA pattern detection
-* Writing style profiling
-
-### Local SEO Intelligence
-
-* Pincode-based location discovery
-* Local trend identification
-* Regional search intent analysis
-* Local context enrichment
-
-### SEO Strategy Generation
-
-* Primary keyword planning
-* Secondary keyword expansion
-* Semantic keyword discovery
-* Search intent classification
-* Content structure optimization
-
-### Article Generation
-
-* Long-form article creation
-* Website-style alignment
-* Local context integration
-* SEO optimization
-* FAQ generation
-* Reference compilation
-
-### Quality Assurance
-
-* Fact checking
-* Style auditing
-* SEO auditing
-* Refinement loops
-* Source validation
+Unlike traditional AI writers, this system analyzes an existing website, learns its writing patterns and brand voice, researches the topic from multiple sources, and produces original content that aligns with the target site's style while maintaining SEO best practices.
 
 ---
 
-# System Architecture
+# Features
+
+## Deep Research Engine
+
+- Multi-source web research using Tavily
+- Query planning and expansion
+- Evidence collection and ranking
+- Source validation
+- Information synthesis
+
+## Website Style Intelligence
+
+Analyzes a reference website and extracts:
+
+- Tone of voice
+- Vocabulary complexity
+- Heading hierarchy
+- Paragraph structure
+- CTA patterns
+- Formatting style
+- Content rhythm
+
+The generated article mirrors the structure and communication style of the target website.
+
+## Brand Voice Adaptation
+
+The system learns:
+
+- Brand personality
+- Messaging style
+- Audience targeting
+- Authority signals
+- Communication patterns
+
+and incorporates them into generated content.
+
+## Humanized AI Writing
+
+Instead of producing generic AI-generated text, the system:
+
+- Rewrites content into natural language
+- Varies sentence structure
+- Improves readability
+- Mimics human writing flow
+- Reduces repetitive AI patterns
+- Preserves originality
+
+This creates content that feels closer to professionally written editorial content.
+
+## Local SEO Intelligence
+
+Using a user-provided pincode, the system identifies:
+
+- Geographic context
+- Regional trends
+- Local search behavior
+- Market-specific opportunities
+
+and naturally incorporates them into the article.
+
+## SEO Strategy Generation
+
+Automatically builds:
+
+- Primary keyword plans
+- Secondary keyword strategies
+- Semantic keyword groups
+- Long-tail opportunities
+- Search intent mapping
+- Content hierarchy
+
+## Article Generation
+
+Produces:
+
+- SEO-friendly title
+- Structured article outline
+- Long-form article content
+- FAQ sections
+- Evidence-backed arguments
+- Search-optimized formatting
+
+## Quality Assurance Pipeline
+
+Before publishing, content passes through:
+
+- Fact checking
+- SEO evaluation
+- Style validation
+- Refinement loops
+- Formatting checks
+
+---
+
+# Architecture
 
 ```text
-User Inputs
+User Input
 │
 ├── Keyword
-├── Website
+├── Website URL
 └── Pincode
-      │
-      ▼
-
-Layer 1: Context Intelligence
 │
-├── Website Style Analysis
-├── Brand Voice Analysis
-├── Pincode Analysis
+▼
+
+Layer 1 — Context Intelligence
+
+├── Input Normalizer
+├── Website Style Analyzer
+├── Brand Voice Analyzer
+├── Pincode Analyzer
 └── Trend Discovery
 
-      ▼
+▼
 
-Layer 2: Research Planning
-│
-├── Intent Analysis
+Layer 2 — Research Planning
+
+├── Intent Analyzer
 ├── SEO Expansion
-├── Research Planning
-└── Search Query Planning
+├── Research Planner
+└── Search Query Planner
 
-      ▼
+▼
 
-Layer 3: Deep Research
-│
+Layer 3 — Deep Research
+
 ├── Tavily Search
 ├── Content Extraction
-├── Research Agent
-├── Evidence Synthesis
-└── Knowledge Graph
+└── Evidence Synthesizer
 
-      ▼
+▼
 
-Layer 4: Content Strategy
-│
-├── SEO Strategy
-├── Article Architecture
-├── Local Context Injection
-└── Style Alignment
+Layer 4 — Content Strategy
 
-      ▼
+├── SEO Strategist
+└── Article Architect
 
-Layer 5: Writing & Validation
-│
-├── Draft Writing
-├── Fact Checking
-├── SEO Auditing
-├── Style Auditing
-├── Refinement
-└── Final Formatting
+▼
 
-      ▼
+Layer 5 — Writing & Validation
 
-Final SEO Article
+├── Draft Writer
+├── Fact Checker
+├── Refinement Engine
+└── Final Formatter
+
+▼
+
+Final SEO-Optimized Humanized Article
 ```
+
+---
+
+# LangGraph Workflow
+
+The workflow consists of 18 interconnected nodes.
+
+## Layer 1: Context Intelligence
+
+1. Input Normalizer
+2. Website Style Analyzer
+3. Brand Voice Analyzer
+4. Pincode Analyzer
+5. Trend Discovery
+
+## Layer 2: Planning
+
+6. Intent Analyzer
+7. SEO Expansion
+8. Research Planner
+9. Search Query Planner
+
+## Layer 3: Research
+
+10. Tavily Search
+11. Content Extraction
+12. Evidence Synthesizer
+
+## Layer 4: Strategy
+
+13. SEO Strategist
+14. Article Architect
+
+## Layer 5: Writing
+
+15. Draft Writer
+16. Fact Checker
+17. Refinement
+18. Final Formatter
 
 ---
 
 # Project Structure
 
 ```text
-seo-content-engine/
+deepresearch-agent/
 │
 ├── app/
-├── schemas/
-├── services/
-├── tools/
+├── graphs/
 ├── nodes/
 │   ├── layer1_context/
 │   ├── layer2_planning/
@@ -147,117 +232,18 @@ seo-content-engine/
 │   └── layer5_writing/
 │
 ├── prompts/
-├── graphs/
+├── schemas/
+├── services/
+├── tools/
 ├── utils/
 ├── tests/
 │
+├── outputs/
 ├── main.py
-├── api.py
 ├── requirements.txt
+├── .env
 └── README.md
 ```
-
----
-
-# Workflow
-
-## Step 1: Input Collection
-
-Example:
-
-```json
-{
-  "keyword": "AI Website Development",
-  "website": "https://example.com/blog",
-  "pincode": "700091"
-}
-```
-
----
-
-## Step 2: Context Intelligence
-
-The system analyzes:
-
-### Website
-
-Extracts:
-
-* Tone
-* Voice
-* Heading patterns
-* Content structure
-* CTA style
-* Vocabulary complexity
-
-### Pincode
-
-Discovers:
-
-* City
-* Region
-* Audience characteristics
-* Local trends
-* Business relevance
-
----
-
-## Step 3: Research Planning
-
-The system generates:
-
-* Search intent
-* SEO opportunities
-* Research objectives
-* Search queries
-* Competitor angles
-
----
-
-## Step 4: Deep Research
-
-Using Tavily and Gemini:
-
-* Searches the web
-* Collects evidence
-* Extracts useful information
-* Removes duplicates
-* Builds a structured knowledge base
-
----
-
-## Step 5: Content Strategy
-
-Creates:
-
-* SEO plan
-* Article outline
-* Keyword placement strategy
-* Local relevance plan
-* Style guidelines
-
----
-
-## Step 6: Article Generation
-
-Produces:
-
-* SEO title
-* Meta description
-* Full article
-* FAQs
-* References
-
----
-
-## Step 7: Validation
-
-The article undergoes:
-
-* Fact checking
-* SEO review
-* Style matching review
-* Refinement cycles
 
 ---
 
@@ -265,34 +251,31 @@ The article undergoes:
 
 ## Orchestration
 
-* LangGraph
-* LangChain
+- LangGraph
+- LangChain
 
 ## Language Models
 
-* Gemini API
+- Groq
+- Llama 3.3 70B Versatile
 
-## Search & Research
+## Research
 
-* Tavily
+- Tavily Search API
 
 ## Web Processing
 
-* httpx
-* BeautifulSoup4
-* markdownify
+- BeautifulSoup4
+- HTTPX
+- Markdownify
 
-## Data Validation
+## Validation
 
-* Pydantic
+- Pydantic
 
-## API Layer
+## Backend
 
-* FastAPI
-
-## Testing
-
-* Pytest
+- Python
 
 ---
 
@@ -301,8 +284,9 @@ The article undergoes:
 ## Clone Repository
 
 ```bash
-git clone <repository-url>
-cd seo-content-engine
+git clone https://github.com/yourusername/deepresearch-agent.git
+
+cd deepresearch-agent
 ```
 
 ## Create Virtual Environment
@@ -314,7 +298,7 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### Linux / macOS
+### Linux/macOS
 
 ```bash
 python -m venv .venv
@@ -331,121 +315,154 @@ pip install -r requirements.txt
 
 # Environment Variables
 
-Create a `.env` file in the project root.
+Create a `.env` file:
 
 ```env
-GEMINI_API_KEY=your_gemini_api_key
+GROQ_API_KEY=your_groq_api_key
 TAVILY_API_KEY=your_tavily_api_key
 
-MODEL_NAME=gemini-2.5-flash
+GROQ_MODEL=llama-3.3-70b-versatile
+GROQ_TEMPERATURE=0.7
+GROQ_MAX_TOKENS=2048
 
 MAX_SEARCH_RESULTS=10
-MAX_RESEARCH_ITERATIONS=5
+MAX_CONTENT_SOURCES=5
 
-CACHE_ENABLED=true
 LOG_LEVEL=INFO
 ```
 
 ---
 
-# Running the Project
+# Usage
 
-## CLI Mode
+Generate an article from a keyword, website, and pincode:
 
 ```bash
-python main.py
+python main.py --keyword "AI Agents" --website "https://blog.langchain.dev" --pincode "712101"
 ```
 
 ---
 
-## API Mode
+# Example Input
 
-```bash
-uvicorn api:app --reload
-```
+```text
+Keyword:
+AI Agents
 
----
+Website:
+https://blog.langchain.dev
 
-# Example Request
-
-```json
-{
-  "keyword": "AI Website Development",
-  "website": "https://example.com/blog",
-  "pincode": "700091"
-}
+Pincode:
+712101
 ```
 
 ---
 
 # Example Output
 
-```markdown
-# AI Website Development in 2026
+```text
+outputs/AI_Agents.md
+```
 
-Meta Description:
-Explore how AI website development is transforming businesses and how local trends are shaping adoption.
+Generated content includes:
 
-## Introduction
+- Website-style alignment
+- Brand voice adaptation
+- Humanized writing
+- SEO optimization
+- Research-backed information
+- Local context integration
+- Structured headings
+- Fact-checked claims
 
-...
+---
 
-## Benefits of AI Website Development
+# End-to-End Workflow
 
-...
-
-## Local Market Insights
-
-...
-
-## Frequently Asked Questions
-
-...
-
-## References
-
-...
+```text
+Keyword
+   │
+   ▼
+Website Analysis
+   │
+   ▼
+Brand Voice Extraction
+   │
+   ▼
+Trend Discovery
+   │
+   ▼
+Research Planning
+   │
+   ▼
+Web Research
+   │
+   ▼
+Evidence Collection
+   │
+   ▼
+SEO Strategy
+   │
+   ▼
+Article Drafting
+   │
+   ▼
+Fact Checking
+   │
+   ▼
+Humanization & Refinement
+   │
+   ▼
+Final SEO Article
 ```
 
 ---
 
-# Testing
+# Output Metadata
 
-Run all tests:
+Each generated article contains:
 
-```bash
-pytest
-```
-
-Run unit tests:
-
-```bash
-pytest tests/unit
-```
-
-Run integration tests:
-
-```bash
-pytest tests/integration
-```
+- Title
+- SEO structure
+- Research-backed content
+- Humanized writing
+- Keyword optimization
+- References
+- SEO metadata
+- Reading-time estimate
 
 ---
 
-# Future Enhancements
+# Future Improvements
 
-* Multi-language article generation
-* Competitor content gap analysis
-* Internal linking recommendations
-* CMS publishing integrations
-* Keyword clustering
-* Content calendar generation
-* RAG-based memory layer
-* Vector database support
-* Agent observability dashboard
-* Human-in-the-loop review workflow
+- Multi-language generation
+- Competitor content gap analysis
+- Automatic CMS publishing
+- Vector database integration
+- RAG memory layer
+- Agent observability dashboard
+- Human review workflow
+- Content performance analytics
 
 ---
 
 # Disclaimer
 
-This project is intended for educational, research, and content-generation workflows. Generated content should always be reviewed by a human before publication. Website analysis is used solely for style and structural understanding. Content is generated to be original and should not reproduce copyrighted material from analyzed sources.
+This project is intended for educational, research, and SEO content generation purposes.
+
+Website analysis is used solely to understand style, tone, and structure. Generated content is original and should always be reviewed by a human before publication.
+
+---
+
+# Portfolio Highlights
+
+- Multi-Agent Architecture
+- LangGraph State Machine
+- Groq LLM Integration
+- Tavily Research Agent
+- Website Style Transfer
+- Brand Voice Adaptation
+- Humanized Content Generation
+- SEO Optimization Pipeline
+- Fact Checking Workflow
+- Production-Ready Modular Design
